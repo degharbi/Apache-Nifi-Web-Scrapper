@@ -71,22 +71,22 @@ Familiarze with the NiFi simple UI here https://nifi.apache.org/docs/nifi-docs/h
 ## The scrapping
 Now that our NiFi is up and running, let's do some scrapping.
 
-First : getting the html source code
-Grab the ```invokeHTTP``` processor
-Check all the Automatically Terminate Relationships boxes on the settings tab
-Select the running time and the yield time 
-Define a URL to scrape in the properties tab, for example https://fr.quora.com/search?q=nifi then apply
+####First : getting the html source code
+- Grab the ```invokeHTTP``` processor
+- Check all the Automatically Terminate Relationships boxes on the settings tab
+- Select the running time and the yield time 
+- Define a URL to scrape in the properties tab, for example https://fr.quora.com/search?q=nifi then apply
 
 We can just run the processor for a few seconds and check data by left clicking the processor and checking View data provenance, but we want to store the html page in a file for further processing right ? 
 
-Second : saving the html source code to a file
+####Second : saving the html source code to a file
 Grab the ```PutFile``` processor
 Checking the Succes or failure relationship, for now just check sucess
 Properties tab : specify a folder to store the file and apply
 
-Third : setting a connection between the processors
-Just drag and drop the arrow from the first processor to the second
-Choose the desired relationship, Original and Response for now
+####Third : setting a connection between the processors
+- Just drag and drop the arrow from the first processor to the second
+- Choose the desired relationship, Original and Response for now
 
 That's it !
 Now we can run and watch the bytes accumulating in and out. So let's check our new files.
