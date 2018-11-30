@@ -70,6 +70,7 @@ Now that our NiFi is up and running, let's do some scrapping.
 
 #### First : getting the html source code
 - Grab the ```invokeHTTP``` processor
+![alt text](https://github.com/degharbi/Apache-Nifi-Web-Scrapper/blob/master/Screenshot%20from%202018-11-29%2022-26-27.png)
 - Check all the Automatically Terminate Relationships boxes on the settings tab
 - Select the running time and the yield time 
 - Define a URL to scrape in the properties tab, for example https://fr.quora.com/search?q=nifi then apply
