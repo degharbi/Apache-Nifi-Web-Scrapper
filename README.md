@@ -1,9 +1,11 @@
-# Nifi_Scraper
+# Nifi_Scrapper
 
-This is a simple application on setting up a web scrapper with Apache NiFi. 
+This is a simple tutorial on setting up a web scrapper with using the Apache NiFi big data stack. 
+I'll be using a docker container. 
 
 ## Apache NiFi
-https://nifi.apache.org/
+what is NiFi ? 
+take a look at https://nifi.apache.org/
 
 ## Docker 
 
@@ -12,14 +14,14 @@ For an easy and quick implementation of NiFi, Docker is a good way to get starte
 
 For installing Docker take a look at the docker quickstart https://docs.docker.com/v17.12/install/ 
 
-### Pulling NiFi docker image
+### Pull NiFi docker image
 After installing Docker, lets pull the NiFi official image from the docker hub https://hub.docker.com/r/apache/nifi/ by tapping the following command :
 
 ```
 docker pull apache/nifi
 ```
 
-### Running the NiFi container
+### Run the NiFi container
 
 First make sure that docker service is running, for example by running the ```docker ps``` command, if not run the following command in sudo mode to start docker :
 ``` service docker start ```
