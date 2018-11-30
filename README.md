@@ -73,6 +73,7 @@ Now that our NiFi is up and running, let's do some scrapping.
 ![alt text](https://github.com/degharbi/Apache-Nifi-Web-Scrapper/blob/master/Screenshot%20from%202018-11-29%2022-26-27.png)
 - Check all the Automatically Terminate Relationships boxes on the settings tab
 - Select the running time and the yield time 
+![qlt text](https://github.com/degharbi/Apache-Nifi-Web-Scrapper/blob/master/Screenshot%20from%202018-11-29%2022-27-38.png)
 - Define a URL to scrape in the properties tab, for example https://fr.quora.com/search?q=nifi then apply
 
 We can just run the processor for a few seconds and check data by left clicking the processor and checking View data provenance, but we want to store the html page in a file for further processing right ? 
